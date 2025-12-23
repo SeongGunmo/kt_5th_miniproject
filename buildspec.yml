@@ -91,14 +91,10 @@ phases:
 artifacts:
   discard-paths: no
   files:
-<<<<<<< Updated upstream
-    - '**/*'
-=======
-    # keep the full project so CodeDeploy can run the instance-side builds
-    - '**/*'
-  exclude-paths:
-    - '.git/**/*'
-    - '.gradle/**/*'
-    - '.idea/**/*'
-    - 'frontend/node_modules/**/*'
->>>>>>> Stashed changes
+  - '**/*'
+exclude-paths:
+  - '.git/**/*'
+  - '.gradle/**/*'
+  - '.idea/**/*'
+  - 'frontend/node_modules/**/*'
+
