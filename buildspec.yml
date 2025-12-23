@@ -33,6 +33,25 @@
 #   files:
 #     - "**/*"
 
+# version: 0.2
+
+# phases:
+#   install:
+#     runtime-versions:
+#       nodejs: 20
+#     commands:
+#       - cd frontend
+#       - npm ci
+
+#   build:
+#     commands:
+#       - npm run build
+
+# artifacts:
+#   base-directory: frontend/dist
+#   files:
+#     - '**/*'
+
 version: 0.2
 
 phases:
@@ -48,6 +67,7 @@ phases:
       - npm run build
 
 artifacts:
-  base-directory: frontend/dist
   files:
-    - '**/*'
+    - 'dist/tema9-angular-project/**/*'
+    - appspec.yml
+    - 'deploy-scripts/**/*'
